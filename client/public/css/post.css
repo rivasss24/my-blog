@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: cadetblue;
+
+}
+
+
+.header{
+    padding: 0;
+    display: flex;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ul li{
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul li:hover{
+    background-color: rgba(239, 225, 209, 0.845);
+}
+
+.ul .active{
+    background-color: rgb(231, 209, 184);
+}
+
+.ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+
+.header button{
+    background-color: transparent;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-right: 1em;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    
+}
+
+.header button:hover{
+    border-radius: 5px;
+    border: 2px solid #00000061;
+}
+
+.header button:active{
+    background-color: rgb(231, 209, 184);
+}
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    /*revisar el height*/
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.formulario .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.title .label-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.description .label-container label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.title input{
+    border: none;
+    background-color: rgb(231, 209, 184);
+    height: 25px;
+    width: 90%;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.title input:focus{
+    outline: none;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+.title p{
+    margin: 0;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+.title p span{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/*
+.formulario div{
+    margin-bottom: 10px;
+}*/
+
+/*
+.formulario{
+
+}
+*/
+
+.formulario .description{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.description input{
+    border: none;
+    background-color: rgb(231, 209, 184);
+    height: 25px;
+    width: 90%;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 200;
+}
+
+.description .label-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.description .label-container label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.description textarea{
+    padding: 5px;
+    width: 90%;
+    height: 250px;
+    border: none;
+    background-color: rgb(231, 209, 184);
+    resize: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 3px;
+}
+
+.description textarea:focus{
+    outline: none;
+}
+
+.description p{
+    margin: 0;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+.description p span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.file-container{
+    margin-bottom: 10px;
+}
+
+.post-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.post-button{
+    font-weight: 500;
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.post-button:hover{
+    cursor: pointer;
+    border: 2px solid #00000061;
+}
+
+.description-text-editor-header{
+    display: flex;
+    width: 100%;
+    height: 25px;
+    /*background-color: yellow;*/
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.description-text-editor-header .iconify{
+    width: 100%;
+    height: 100%;
+
+}
+
+.decription-div-container{
+    
+    padding: 5px;
+    width: 90%;
+    height: 250px;
+    border: none;
+    background-color: rgb(231, 209, 184);
+    resize: none;
+    font-size: 17px;
+    font-weight: 400;
+    /*font-family: 'Roboto', sans-serif;*/
+    border-radius: 3px;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.decription-div-container img{
+    max-height: 150px;
+    width: auto;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+ 
+    {{> navbar }}
+
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <div class="title">
+                <div class="label-container">
+                    <label for="tittle">Title</label>
+                </div>
+                <input type="text" placeholder="" name="title" id="title">
+                <p><span id="titleCaracteres">0/100</span></p>
+            </div>
+
+            <div class="description">
+
+                <div class="label-container">
+                    <label for="description">Description</label>
+                </div>
+
+                <input type="text" name="description" id="description">
+                <p><span id="descCaracteres">0/200</span></p>
+
+                <div class="description-text-editor-header">
+                    <button type="button" data-element="bold" class="btn">
+                        <iconify-icon icon="carbon:text-bold" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="italic" class="btn">
+                        <iconify-icon icon="carbon:text-italic" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="underline" class="btn">
+                        <iconify-icon icon="carbon:text-underline" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="insertUnorderedList" class="btn">
+                        <iconify-icon icon="carbon:list-bulleted" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="insertOrderedList" class="btn">
+                        <iconify-icon icon="uil:list-ol" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="createLink" class="btn">
+                        <iconify-icon icon="carbon:link" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="justifyLeft" class="btn">
+                        <iconify-icon icon="carbon:text-align-left" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="justifyCenter" class="btn">
+                        <iconify-icon icon="carbon:text-align-center" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="justifyRight" class="btn">
+                        <iconify-icon icon="carbon:text-align-right" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="justifyFull" class="btn">
+                        <iconify-icon icon="carbon:text-align-justify" class="iconify"></iconify-icon>
+                    </button>
+                    <button type="button" data-element="insertImage" class="btn">
+                        <iconify-icon icon="carbon:image" class="iconify"></iconify-icon>
+                    </button>
+                </div>
+                <!--<textarea  id="description" placeholder="Comienza aqui"></textarea>-->
+                <div class="content decription-div-container" contenteditable="true" id="contenido"></div>
+
+            </div>
+
+
+
+            <div class="file-container">
+                <input type="file" name="file" id="file">
+            </div>
+
+            <div class="post-button-container">
+                <button class="post-button" id="postButton">Post</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/post.js"></script>
+</body>
+</html>

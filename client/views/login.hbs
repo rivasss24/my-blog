@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <main>
+        <form class="formulario" id="formulario">
+
+            <div>
+                <label for="correo">Email:</label>
+                <div>
+                    <input type="email" placeholder="correo" name="correo" id="correo">
+                </div>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <div>
+                    <input type="password" placeholder="contraseña" name="password" id="password">
+                </div>
+            </div>
+
+            <div class="login-container">
+                <button id="login" class="login">
+                    Login
+                </button>
+            </div>
+        </form>
+        <a href="../">Sign up</a>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="/js/login.js"></script>
+</body>
+</html>

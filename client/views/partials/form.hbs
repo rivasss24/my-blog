@@ -1,0 +1,57 @@
+    <main>
+        <form class="formulario" id="formulario">
+
+            <div class="avatar">
+                <div class="img-container">
+                    <img src="/assets/default-avatar.jpg" alt="" id="imgAvatar">
+                </div>
+            </div>
+
+            <div class="input-sign-up">
+                <label for="nombre">Name:</label>
+                <div>
+                    <input type="text" placeholder="nombre" name="nombre" id="nombre">
+                </div>
+                <p class="add-product_error" id="nombreError">El nombre no puede contener números ni caracteres especiales y debe de ser de 4 a 30 caracteres.</p>
+            </div>
+
+            <div class="input-sign-up">
+                <label for="correo">Email:</label>
+                <div>
+                    <input type="email" placeholder="correo" name="correo" id="correo">
+                </div>
+                <p class="add-product_error" id="emailError">No es un correo electronico valido.</p>
+            </div>
+
+            <div class="input-sign-up">
+                <label for="password">Password:</label>
+                <div class="password-input-container">
+                    <input type="password" placeholder="contraseña" name="password" id="password">
+                    <div class="checkbox-container">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <iconify-icon icon="akar-icons:eye-open"></iconify-icon>
+                    </div>
+                </div>
+            <!--<p class="add-product_error" id="passwordError">Minimo 8 caracteres, maximo 15. 
+                    Al menos una letra mayúscula, una letra minuscula y un dígito.
+                    No espacios en blanco y 1 caracter especial</p>-->
+                <p class="add-product_error" id="passwordError">
+                    La contraseña debe tener de 8 a 16 caracteres
+                </p>
+            </div>
+
+            <div>
+                <input type="file" name="file" id="file"
+                placeholder="seleccione una imagen">
+            </div>
+
+            <div class="sign-up-container">
+                <button class="sign-up" id="signUp">
+                    Sign up
+                </button>
+            </div>
+
+        </form>
+
+        <a href="login">Login</a>
+    </main>
